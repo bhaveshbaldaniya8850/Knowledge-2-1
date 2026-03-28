@@ -1,0 +1,26 @@
+# Python Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE / OS Environment
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Virtual Environments
+myprojectenv/
+env/
+venv/
+.env
+
+# Django specific
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# File Uploads (Media/User Uploads)
+static/sagar/
+media/

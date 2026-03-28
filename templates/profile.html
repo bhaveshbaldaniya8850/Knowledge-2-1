@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+
+{% block title %}Profile Dashboard{% endblock title %}
+
+{% block profileactive %}active{% endblock profileactive %}
+
+{% block body %}
+<div class="row py-5 px-4">
+    <div class="col-xl-12 col-md-10 col-sm-12 mx-auto">
+
+        <!-- Profile widget -->
+        <div class="bg-white shadow rounded overflow-hidden mb-5">
+            <div class="px-4 pt-4 pb-4 bg-dark">
+                <div class="media align-items-end profile-header text-white">
+                    <h2 class="mt-0 mb-0">Welcome, {{request.user.username}}!</h2>
+                    <p class="small mb-4">{{request.user.email}}</p>
+                </div>
+            </div>
+            
+            <div class="bg-light p-4 d-flex justify-content-start text-center">
+                <ul class="list-inline mb-0">
+                    <li class="list-inline-item mr-4">
+                        <h5 class="font-weight-bold mb-0 d-block">{{ my_books.count }}</h5><small class="text-muted">Books Listed</small>
+                    </li>
+                    <li class="list-inline-item">
+                        <h5 class="font-weight-bold mb-0 d-block">{{ incoming_requests.count }}</h5><small class="text-muted">Requests Received</small>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Dashboard Grid -->
+        <div class="row">
+            <!-- Incoming Requests Column -->
+            <div class="col-lg-6 mb-4">
+                <h4 class="mb-3">Incoming Trade Requests</h4>
+                {% if incoming_requests %}
+                    {% for req in incoming_requests %}
+                        <div class="card mb-3 shadow-sm border-left-primary">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ req.requester.username }} wants <strong>{{ req.book_requested.title }}</strong></h5>
+                                <p class="card-text text-muted mb-1"><small>Message: {{ req.message }}</small></p>
+                                <p class="card-text mb-2"><strong>Status:</strong> <span class="badge bg-{% if req.status == 'Pending' %}warning{% elif req.status == 'Accepted' %}success{% else %}danger{% endif %}">{{ req.status }}</span></p>
+                                {% if req.status == 'Pending' %}
+                                    <div class="mt-2">
+                                        <a href="{% url 'accept_trade' req.id %}" class="btn btn-sm btn-success">Accept</a>
+                                        <a href="{% url 'decline_trade' req.id %}" class="btn btn-sm btn-danger">Decline</a>
+                                    </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    {% endfor %}
+                {% else %}
+                    <div class="alert alert-light border">No incoming trade requests yet.</div>
+                {% endif %}
+            </div>
+
+            <!-- Outgoing Requests Column -->
+            <div class="col-lg-6 mb-4">
+                <h4 class="mb-3">Your Sent Requests</h4>
+                {% if outgoing_requests %}
+                    {% for req in outgoing_requests %}
+                        <div class="card mb-3 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">You requested <strong>{{ req.book_requested.title }}</strong></h5>
+                                <p class="card-text text-muted mb-1"><small>From: {{ req.book_requested.owner.username }}</small></p>
+                                <p class="card-text mb-0"><strong>Status:</strong> <span class="badge bg-{% if req.status == 'Pending' %}warning{% elif req.status == 'Accepted' %}success{% else %}danger{% endif %}">{{ req.status }}</span></p>
+                            </div>
+                        </div>
+                    {% endfor %}
+                {% else %}
+                    <div class="alert alert-light border">You haven't requested any books yet.</div>
+                {% endif %}
+            </div>
+        </div>
+
+        <!-- My Books -->
+        <div class="py-4">
+            <h4 class="mb-3">My Book Listings <a href="/new_post" class="btn btn-sm btn-outline-primary float-end">Add New Book</a></h4>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            {% for post in my_books %}
+                <div class="col">
+                    <div class="card shadow-sm h-100">
+                        {% if post.cover %}
+                            <img src="{{ post.cover.url }}" class="card-img-top" alt="Cover" style="height: 250px; object-fit: cover;">
+                        {% else %}
+                            <div class="card-img-top bg-secondary text-white d-flex justify-content-center align-items-center" style="height: 250px;">
+                                <span>No Cover Uploaded</span>
+                            </div>
+                        {% endif %}
+                        <div class="card-body">
+                            <h5 class="card-title">{{ post.title }}</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Author: {{ post.author }}</h6>
+                            <p class="card-text small">{{ post.info|truncatechars:100 }}</p>
+                            <p class="card-text mb-0"><strong>Status:</strong> {{ post.status }}</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0">
+                            <small class="text-muted">Listed on {{ post.timestamp|date:"M d, Y" }}</small>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %} 
+            {% if not my_books %}
+                <div class="col-12">
+                    <div class="alert alert-light border">You haven't listed any books for trade yet.</div>
+                </div>
+            {% endif %}      
+            </div>
+        </div>
+        
+    </div>
+</div>
+{% endblock body %}

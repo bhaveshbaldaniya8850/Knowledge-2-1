@@ -1,0 +1,68 @@
+File,LOC,SLOC-P,SLOC-L,MVG,BLOC,C&SLOC,CLOC,CWORD,HCLOC,HCWORD
+E:\Django\project\media\Booklogo.jpg,1931,832,636,0,0,12,1099,5693,0,0
+E:\Django\project\media\dreaming_art.jpg,43,43,23,0,0,0,0,0,0,0
+E:\Django\project\media\Harry.jpg,29,27,26,1,2,0,0,0,0,0
+E:\Django\project\media\prince.jpg,31,31,15,0,0,0,0,0,0,0
+E:\Django\project\media\red_planet.jpg,55,54,29,0,1,0,0,0,0,0
+E:\Django\project\media\The_great.jpg,36,34,18,0,2,0,0,0,0,0
+E:\Django\project\myprojectenv\.gitignore,3,2,0,0,1,0,0,0,0,0
+E:\Django\project\myprojectenv\pyvenv.cfg,9,8,0,0,1,0,0,0,0,0
+E:\Django\project\myprojectenv\Lib\site-packages\pip\_vendor\distlib\_backport\sysconfig.cfg,85,76,83,0,9,0,0,0,0,0
+E:\Django\project\static\book.jpg,157,35,19,0,122,1,0,3,0,0
+E:\Django\project\static\Booklogo.jpg,1931,832,636,0,0,12,1099,5693,0,0
+E:\Django\project\static\Booklogo_BYzwTTk.jpg,1931,832,636,0,0,12,1099,5693,0,0
+E:\Django\project\static\dreaming art.jpg,43,43,23,0,0,0,0,0,0,0
+E:\Django\project\static\dreaming_art.jpg,43,43,23,0,0,0,0,0,0,0
+E:\Django\project\static\Harry.jpg,29,27,26,1,2,0,0,0,0,0
+E:\Django\project\static\Harry_kZUN1m1.jpg,29,27,26,1,2,0,0,0,0,0
+E:\Django\project\static\photo.jpg,230,163,170,0,2,2,65,315,0,0
+E:\Django\project\static\pp.jpg,19,18,15,0,1,0,0,0,0,0
+E:\Django\project\static\pp_52JHFvZ.jpg,19,18,15,0,1,0,0,0,0,0
+E:\Django\project\static\pp_MaPnHD5.jpg,19,18,15,0,1,0,0,0,0,0
+E:\Django\project\static\prince.jpg,31,31,15,0,0,0,0,0,0,0
+E:\Django\project\static\prince_mdWQgbW.jpg,31,31,15,0,0,0,0,0,0,0
+E:\Django\project\static\read_books.jpg,222,219,215,0,3,1,0,1,0,0
+E:\Django\project\static\red planet.jpg,55,54,29,0,1,0,0,0,0,0
+E:\Django\project\static\red_planet.jpg,55,54,29,0,1,0,0,0,0,0
+E:\Django\project\static\source.unsplash.jpg,739,632,374,0,4,3,103,518,0,0
+E:\Django\project\static\The great.jpg,36,34,18,0,2,0,0,0,0,0
+E:\Django\project\static\The_great.jpg,36,34,18,0,2,0,0,0,0,0
+E:\Django\project\static\book.png,11,11,6,0,0,1,0,15,0,0
+E:\Django\project\static\bhavesh_admin\Booklogo.jpg,1931,832,636,0,0,12,1099,5693,0,0
+E:\Django\project\static\bhavesh_admin\dreaming_art.jpg,43,43,23,0,0,0,0,0,0,0
+E:\Django\project\static\bhavesh_admin\Harry.jpg,29,27,26,1,2,0,0,0,0,0
+E:\Django\project\static\bhavesh_admin\prince.jpg,31,31,15,0,0,0,0,0,0,0
+E:\Django\project\static\bhavesh_admin\red_planet.jpg,55,54,29,0,1,0,0,0,0,0
+E:\Django\project\static\bhavesh_admin\The_great.jpg,36,34,18,0,2,0,0,0,0,0
+E:\Django\project\static\books for posting\BEARTOWN.png,402,400,310,0,2,1,0,18,0,0
+E:\Django\project\static\books for posting\COMMONWEALTH.png,410,156,141,0,1,2,253,1457,0,0
+E:\Django\project\static\books for posting\LESS.png,187,187,239,0,0,2,0,10,0,0
+E:\Django\project\static\books for posting\ROOM.png,158,157,176,0,1,0,0,0,0,0
+E:\Django\project\static\books for posting\THE HEART’S INVISIBLE FURIES.png,268,223,224,0,2,2,43,307,0,0
+E:\Django\project\static\books for posting\THREE JUNES.png,314,189,184,0,0,2,125,784,0,0
+E:\Django\project\static\free_books\cover_images\Mars-2020-Exploration-Mission.jpg,141,141,142,0,0,2,0,18,0,0
+E:\Django\project\static\free_books\cover_images\RocketSTEM_issue_10.jpg,61,59,86,0,2,1,0,106,0,0
+E:\Django\project\static\free_books\cover_images\RocketSTEM_issue_11.jpg,119,84,78,0,2,2,33,256,0,0
+E:\Django\project\static\free_books\cover_images\RocketSTEM_issue_12.jpg,110,105,123,0,3,2,2,140,0,0
+E:\Django\project\static\free_books\cover_images\RocketSTEM_issue_13.jpg,84,82,84,0,2,1,0,119,0,0
+E:\Django\project\static\free_books\cover_images\RocketSTEM_issue_14.jpg,235,235,207,0,0,4,0,139,0,0
+E:\Django\project\static\free_books\cover_images\RocketSTEM_issue_7.jpg,97,95,113,0,2,2,0,118,0,0
+E:\Django\project\static\free_books\cover_images\RocketSTEM_issue_8.jpg,106,82,164,0,2,2,22,324,0,0
+E:\Django\project\static\free_books\cover_images\RocketSTEM_issue_9.jpg,102,14,27,0,0,1,88,886,0,0
+E:\Django\project\static\sagar\BEARTOWN.png,402,400,310,0,2,1,0,18,0,0
+E:\Django\project\static\sagar\COMMONWEALTH.png,410,156,141,0,1,2,253,1457,0,0
+E:\Django\project\static\sagar\LESS.png,187,187,239,0,0,2,0,10,0,0
+E:\Django\project\static\sagar\ROOM.png,158,157,176,0,1,0,0,0,0,0
+E:\Django\project\static\sagar\THE_HEARTS_INVISIBLE_FURIES.png,268,223,224,0,2,2,43,307,0,0
+E:\Django\project\static\sagar\THREE_JUNES.png,314,189,184,0,0,2,125,784,0,0
+E:\Django\project\templates\base.html,212,184,34,0,28,0,0,0,0,0
+E:\Django\project\templates\chats.html,10,5,7,0,5,0,0,0,0,0
+E:\Django\project\templates\contactus.html,49,46,24,0,3,0,0,0,0,0
+E:\Django\project\templates\index.html,224,206,49,0,18,0,0,0,0,0
+E:\Django\project\templates\newpost.html,58,53,28,0,5,0,0,0,0,0
+E:\Django\project\templates\posted.html,37,29,21,0,8,0,0,0,0,0
+E:\Django\project\templates\profile.html,99,85,23,0,14,0,0,0,0,0
+E:\Django\project\templates\read.html,200,181,33,0,19,0,0,0,0,0
+E:\Django\project\templates\search.html,33,26,17,0,7,0,0,0,0,0
+E:\Django\project\templates\images.css,6,6,4,0,0,0,0,0,0,0
+E:\Django\project\templates\style.css,9,6,4,0,3,0,0,0,0,0

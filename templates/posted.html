@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title %}posted{% endblock title %}
+{% block postactive %}active{% endblock postactive %}
+{% block postedactive %}active{% endblock postedactive %}
+
+{% block body %}
+here you you can see your posted content
+
+<div class="album py-5 bg-light">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+{% for post in allposts %}
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src = {{post.cover}} class="4-block w-20" alt="..." >
+
+            <div class="card-body">
+              <p class="card-text"><h3>{{post.title}}</h3><br>{{post.author}}<br>{{post.info}}</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+
+                  <button type="button" class="btn btn-sm btn-outline-secondary"<a href ="/postbook/postbookpost">Trade</a></button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Like</button>
+                </div>
+                <small class="text-muted">{{post.timestamp}}</small>
+              </div>
+            </div>
+          </div>
+        </div>
+{% endfor %}       
+    </div>
+</div>
+
+
+
+{% endblock body %}

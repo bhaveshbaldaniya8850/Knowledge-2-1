@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}Request Trade{% endblock title %}
+{% block body %}
+<div class="container mt-5">
+    <div class="card shadow-sm mx-auto" style="max-width: 600px;">
+        <div class="card-header bg-dark text-white">
+            <h4>Request to Trade: {{ book.title }}</h4>
+        </div>
+        <div class="card-body">
+            <p><strong>Owned by:</strong> {{ book.owner.username }}</p>
+            <p><strong>Book Condition/Info:</strong> {{ book.info }}</p>
+            <hr>
+            <form action="{% url 'request_trade' book.id %}" method="post">
+                {% csrf_token %}
+                <div class="form-group mb-3">
+                    <label for="message">Message to Owner (optional)</label>
+                    <textarea class="form-control" name="message" id="message" rows="4" placeholder="Hi! I'd love to trade this book. I have a copy of..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-success"><i class="fa fa-paper-plane"></i> Send Trade Request</button>
+                <a href="{% url 'home' %}" class="btn btn-secondary">Cancel</a>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock body %}

@@ -1,0 +1,200 @@
+{% extends 'base.html' %}
+
+{% block title %}Read Books{% endblock title %}
+{% block readactive %}active{% endblock readactive %}
+{% block head %}<link rel="stylesheet" href="">{% endblock head %}
+{% block body %}
+
+<main>
+
+  <div class="container-fluid my-8 px-0">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        {% comment %} <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button> {% endcomment %}
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://source.unsplash.com/1800x600/?read" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h1 style="color:black">Read books for free here...</h1>
+            <h1 style="color:black">Increase your knolwdge</h1>
+            {% comment %} <p style="color:black"><B>Books should go where they will be most appreciated, and not sit unread, gathering dust on a forgotten shelf, don’t you agree?</B></p> {% endcomment %}
+          </div>
+        </div>
+        {% comment %} <div class="carousel-item">
+          <img src="https://source.unsplash.com/1800x600/?knowledge" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Albert Einstein</h5>
+            <p><B>The true sign of intelligence is not knowledge but imagination.</B></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://source.unsplash.com/1800x600/?learn" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 style="color:black">J.K. Rowling</h5>
+            <p style="color:black"><B>If you don't like to read, you haven't found the right book.</B></p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span> {% endcomment %}
+      </button>
+    </div>
+    </div>
+  
+    <div class="album py-5 bg-light">
+      <div class="container">
+  
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+          <div class="col">
+            <div class="card bg-dark text-white">
+              <a href="http://127.0.0.1:8000/static/free_books/cover_images/Mars-2020-Exploration-Mission.jpg"><img src ="http://127.0.0.1:8000/static/free_books/cover_images/Mars-2020-Exploration-Mission.jpg" class="4-block w-40" alt="..." style="width:17rem;height:22rem;padding: 20px 20px 20px 8px;"></a>
+  
+              <div class="card-body">
+                <h4><p class="card-text">Mars-2020 Exploration Mission</p></h4>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="http://127.0.0.1:8000/static/free_books/Mars-2020-Exploration-Mission-Guide.pdf" <button type="button" class="btn btn-primary">Read Now</button></a>
+                    {% comment %} <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> {% endcomment %}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-dark text-white">
+              <a href="http://127.0.0.1:8000/static/free_books/cover_images/RocketSTEM_issue_14.jpg"><img src ="http://127.0.0.1:8000/static/free_books/cover_images/RocketSTEM_issue_14.jpg" class="4-block w-40" alt="..." style="width:17rem;height:22rem;padding: 20px 20px 20px 8px;"></a>
+  
+              <div class="card-body">
+                <h4><p class="card-text">RocketSTEM issue 14</p></h4>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="http://127.0.0.1:8000/static/free_books/RocketSTEM_issue_14_march_2017" <button type="button" class="btn btn-primary">Read Now</button></a>
+                    {% comment %} <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> {% endcomment %}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-dark text-white">
+              <a href="http://127.0.0.1:8000/static/free_books/cover_images/RocketSTEM_issue_13.jpg"><img src ="http://127.0.0.1:8000/static/free_books/cover_images/RocketSTEM_issue_13.jpg" class="4-block w-40" alt="..." style="width:17rem;height:22rem;padding: 20px 20px 20px 8px;"></a>
+  
+              <div class="card-body">
+                <h4><p class="card-text">RocketSTEM issue 13</p></h4>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="http://127.0.0.1:8000/static/free_books/RocketSTEM_issue_13_september_2016.pdf" <button type="button" class="btn btn-primary">Read Now</button></a>
+                    {% comment %} <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> {% endcomment %}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-dark text-white">
+              <a href="http://127.0.0.1:8000/static/free_books/cover_images/RocketSTEM_issue_12.jpg"><img src ="http://127.0.0.1:8000/static/free_books/cover_images/RocketSTEM_issue_12.jpg" class="4-block w-40" alt="..." style="width:17rem;height:22rem;padding: 20px 20px 20px 8px;"></a>
+  
+              <div class="card-body">
+                <h4><p class="card-text">RocketSTEM issue 12</p></h4>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="http://127.0.0.1:8000/static/free_books/RocketSTEM_issue_12_july_2015.pdf" <button type="button" class="btn btn-primary">Read Now</button></a>
+                    {% comment %} <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> {% endcomment %}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-dark text-white">
+              <a href="http://127.0.0.1:8000/static/free_books/cover_images/RocketSTEM_issue_11.jpg"><img src ="http://127.0.0.1:8000/static/free_books/cover_images/RocketSTEM_issue_11.jpg" class="4-block w-40" alt="..." style="width:17rem;height:22rem;padding: 20px 20px 20px 8px;"></a>
+  
+              <div class="card-body">
+                <h4><p class="card-text">RocketSTEM issue 11</p></h4>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="http://127.0.0.1:8000/static/free_books/RocketSTEM_issue_11_april_2015.pdf" <button type="button" class="btn btn-primary">Read Now</button></a>
+                    {% comment %} <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> {% endcomment %}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-dark text-white">
+              <a href="http://127.0.0.1:8000/static/free_books/cover_images/RocketSTEM_issue_10.jpg"><img src ="http://127.0.0.1:8000/static/free_books/cover_images/RocketSTEM_issue_10.jpg" class="4-block w-40" alt="..." style="width:17rem;height:22rem;padding: 20px 20px 20px 8px;"></a>
+  
+              <div class="card-body">
+                <h4><p class="card-text">RocketSTEM issue 10</p></h4>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="http://127.0.0.1:8000/static/RocketSTEM_issue_10_february_2015.pdf" <button type="button" class="btn btn-primary">Read Now</button></a>
+                    {% comment %} <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> {% endcomment %}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-dark text-white">
+              <a href="http://127.0.0.1:8000/static/free_books/cover_images/RocketSTEM_issue_9.jpg"><img src ="http://127.0.0.1:8000/static/free_books/cover_images/RocketSTEM_issue_9.jpg" class="4-block w-40" alt="..." style="width:17rem;height:22rem;padding: 20px 20px 20px 8px;"></a>
+  
+              <div class="card-body">
+                <h4><p class="card-text">RocketSTEM issue 9</p></h4>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="http://127.0.0.1:8000/static/free_books/RocketSTEM_issue_9_october_2014.pdf" <button type="button" class="btn btn-primary">Read Now</button></a>
+                    {% comment %} <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> {% endcomment %}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-dark text-white">
+              <a href="http://127.0.0.1:8000/static/free_books/cover_images/RocketSTEM_issue_8.jpg"><img src ="http://127.0.0.1:8000/static/free_books/cover_images/RocketSTEM_issue_8.jpg" class="4-block w-40" alt="..." style="width:17rem;height:22rem;padding: 20px 20px 20px 8px;"></a>
+  
+              <div class="card-body">
+                <h4><p class="card-text">RocketSTEM issue 8</p></h4>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="http://127.0.0.1:8000/static/free_books/RocketSTEM_issue_8_july_2014.pdf" <button type="button" class="btn btn-primary">Read Now</button></a>
+                    {% comment %} <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> {% endcomment %}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-dark text-white">
+              <a href="http://127.0.0.1:8000/static/free_books/cover_images/RocketSTEM_issue_7.jpg"><img src ="http://127.0.0.1:8000/static/free_books/cover_images/RocketSTEM_issue_7.jpg" class="4-block w-40" alt="..." style="width:17rem;height:22rem;padding: 20px 20px 20px 8px;"></a>
+  
+              <div class="card-body">
+                <h4><p class="card-text">RocketSTEM issue 7</p></h4>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="http://127.0.0.1:8000/static/free_books/RocketSTEM_issue_7_may_2014.pdf" <button type="button" class="btn btn-primary">Read Now</button></a>
+                    {% comment %} <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> {% endcomment %}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+
+          
+        </div>
+      </div>
+    </div>
+  
+  </main>
+
+{% endblock body %}

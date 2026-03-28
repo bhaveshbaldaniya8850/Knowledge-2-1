@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block title %}about us{% endblock title %}
+
+{% block contactusactive %}active{% endblock contactusactive %}
+
+{% block body %}
+<form action="/contactus" method="post">
+{% for message in messages %}
+      <div class="alert alert-{{ message.tags }} alert-dismissible from show" role="alert">
+            <strong>Message: </strong>{{ message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                  {% comment %} <span aria-hiddne="true">&times;</span> {% endcomment %}
+      </div>
+      {% endfor  %}
+<div class="container">
+<h2>Contact Knowledge<sup>2</sup>+1 admin team</h2>
+      {% csrf_token %}
+      <div class="from-group">
+            <label for="name">Name</label>
+            <input type="name" class="form-control" id="name" name="name" placeholder="Enter your name here">
+      </div>
+      <div class="from-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+            <small id='emailhelp' class'from-text text-method'> We'll never share your email with anyone else.</small>
+      </div>
+      <div class="from-group">
+            <label for="phone" >Phone number</label>
+            {% comment %} <div class="col-sm-10"> {% endcomment %}
+            <input type="phone" class="form-control" id="phone" name="phone_no" placeholder="Enter your phone number with the cousntry code">
+      </div>
+      <div class="from-group">
+            <label for="content" >Tell us, How may we help you?</label>
+            {% comment %} <input type="text" class="form-control" id="content"> {% endcomment %}
+            <textarea class="form-control" name="content" id="content" name="content" cols="30" rows="4" placeholder="Describe your issue here"></textarea>
+      </div>
+      <br>
+      {% csrf_token %}
+      {% if user.is_authenticated %}
+      {% csrf_token %}
+            <button type="submit" class="btn btn-primary">Submit</button>
+      {% else %}
+      {% csrf_token %}
+      <button type="button" onclick="alert('You have to first login or signup')">submit</button>
+      {% endif %}
+</form>
+</div>
+{% endblock body %}

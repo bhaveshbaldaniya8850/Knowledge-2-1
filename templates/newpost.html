@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block title %}newpost{% endblock title %}
+{% block postactive %}active{% endblock postactive %}
+{% block newpostactive %}active{% endblock newpostactive %}
+
+{% block body %}
+<div class="container">
+<form action="/new_post" method="post" enctype="multipart/form-data">
+      {% for message in messages %}
+      <div class="alert alert-{{ message.tags }} alert-dismissible from show" role="alert">
+            <strong>Message: </strong>{{ message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+      {% endfor  %}
+{% csrf_token %}
+      <div class="from-group mt-3">
+            <label for="name">Title</label>
+            <input type="name" class="form-control" id="title" name="title" placeholder="Title of your Book" required>
+      </div>
+      <div class="from-group">
+            <label for="author">Author</label>
+            <input type="author" class="form-control" id="author" name="author" placeholder="Book Author">
+      </div>
+      <div class="from-group">
+            <label for="phone">Phone no </label>
+            <input type="number" class="form-control" id="phone" name="phone" placeholder="Enter your phone number without country code">
+      </div>
+      <div class="from-group">
+            <label for="content" >About your Book</label>
+            {% comment %} <input type="text" class="form-control" id="content"> {% endcomment %}
+            <textarea class="form-control" name="info" id="info" cols="30" rows="4" placeholder="Describe your issue here"></textarea>
+      </div>
+      <div class="from-group">
+            <label for="content" >Post the pitchure of your Book here ..</label><br><br>
+            {% comment %} <input type="text" class="form-control" id="content"> {% endcomment %}
+            <input type="file" name="cover" id="cover"accept="image/*" value=None>
+      </div>
+      <br>
+      {% csrf_token %}
+      
+      {% if user.is_authenticated %}
+      {% csrf_token %}
+            <button type="submit" class="btn btn-primary">Submit</button>
+
+      {% else %}
+      {% csrf_token %}
+      <button type="button" onclick="alert('You have to first login or signup')">submit</button>
+      {% endif %}
+</form>
+</div>
+
+{% endblock body %}

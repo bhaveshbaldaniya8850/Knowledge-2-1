@@ -1,0 +1,18 @@
+Folder,Files,LOC,SLOC-P,SLOC-L,MVG,BLOC,C&SLOC,CLOC,CWORD,HCLOC,HCWORD
+Total,67,15483,9632,7716,4,300,91,5551,30882,0,0
+E:\Django\project,67,15483,9632,7716,4,300,91,5551,30882,0,0
+E:\Django\project\media,6,2125,1021,747,1,5,12,1099,5693,0,0
+E:\Django\project\myprojectenv,3,97,86,83,0,11,0,0,0,0,0
+E:\Django\project\myprojectenv\Lib,1,85,76,83,0,9,0,0,0,0,0
+E:\Django\project\myprojectenv\Lib\site-packages,1,85,76,83,0,9,0,0,0,0,0
+E:\Django\project\myprojectenv\Lib\site-packages\pip,1,85,76,83,0,9,0,0,0,0,0
+E:\Django\project\myprojectenv\Lib\site-packages\pip\_vendor,1,85,76,83,0,9,0,0,0,0,0
+E:\Django\project\myprojectenv\Lib\site-packages\pip\_vendor\distlib,1,85,76,83,0,9,0,0,0,0,0
+E:\Django\project\myprojectenv\Lib\site-packages\pip\_vendor\distlib\_backport,1,85,76,83,0,9,0,0,0,0,0
+E:\Django\project\static,47,12324,7698,6642,3,174,79,4452,25189,0,0
+E:\Django\project\static\bhavesh_admin,6,2125,1021,747,1,5,12,1099,5693,0,0
+E:\Django\project\static\books for posting,6,1739,1312,1274,0,6,9,421,2576,0,0
+E:\Django\project\static\free_books,9,1055,897,1024,0,13,17,145,2106,0,0
+E:\Django\project\static\free_books\cover_images,9,1055,897,1024,0,13,17,145,2106,0,0
+E:\Django\project\static\sagar,6,1739,1312,1274,0,6,9,421,2576,0,0
+E:\Django\project\templates,11,937,827,244,0,110,0,0,0,0,0
